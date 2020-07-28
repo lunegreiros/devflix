@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css'
 import Logo from '../../assets/gameflix_logo.png';
 import Button from '../Button';
@@ -10,9 +11,9 @@ function Menu() {
     return (
         <nav id="navega_top">
             <div className="menu_esquerda">
-                <a href="/">
+                <Link to="/">
                     <img className="nav_menu" src={Logo} alt="devflix logo" />
-                </a>
+                </Link>
                 <ul className="menu_links">
                     <li><a href="/">Favoritos</a></li>
                     <li><a href="/">FPS</a></li>
@@ -22,7 +23,7 @@ function Menu() {
                 </ul>
             </div>
 
-            <Button as="a" className="ButtonLink" href="/">
+            <Button as={Link} className="ButtonLink" to="/cadastro/video">
                 <PlusSquare color="lightgray" size={20} />
             </Button>
 
