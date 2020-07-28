@@ -1,5 +1,6 @@
 .nav_menu {
   max-width: 100px;
+  padding-top: 8px;
 }
 
 #navega_top {
@@ -27,7 +28,7 @@
 }
 
 .menu_esquerda ul {
-  color: var(--grayMedium);
+  color: var(--blackLighter);
   list-style: none;
   font-weight: 300;
   font-size: 14px;

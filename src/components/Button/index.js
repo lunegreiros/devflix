@@ -5,7 +5,7 @@ color: var(--blackLighter);
   /* border: 1px solid var(--white); */
   box-sizing: border-box;
   cursor: pointer;
-  padding: 5px 24px;
+  padding: 5px 8px 0px 8px;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;

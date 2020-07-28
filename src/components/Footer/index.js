@@ -1,6 +1,6 @@
 import React from 'react';
 import { FooterBase } from './style';
-import Logo from '../../assets/devflix_logo_1.svg';
+import Logo from '../../assets/gameflix_logo.png';
 
 function Footer() {
     return (
