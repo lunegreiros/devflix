@@ -16,8 +16,9 @@
 
 html,
 body {
-  margin: 0;
+  margin: 0px;
   padding: 0;
+  background-color: var(--black);
 }
 
 a {

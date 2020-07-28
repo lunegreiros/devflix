@@ -1,13 +1,18 @@
 import React from 'react';
-import './App.css';
 import Header from './components/Menu'
+import FooterBase from './components/Footer';
+import BannerMain from './components/BannerMain';
+
 
 function App() {
   return (
-    <div>
+    <>
+
       <Header />
-      <h1>hello world</h1>
-    </div>
+      <BannerMain />
+
+      <FooterBase />
+    </>
   );
 }
 
