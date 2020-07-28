@@ -7,6 +7,17 @@ function CadastroCategoria() {
         <PageTemplate>
             <h1>Cadastro de Categorias</h1>
 
+            <form>
+                <label>
+                    Nome da Categoria:
+                    <input type="text" />
+                </label>
+
+                <button>
+                    Cadastrar
+                </button>
+            </form>
+
             <Link to='/cadastro/video'>
                 Cadastrar Vídeo
             </Link>

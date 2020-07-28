@@ -8,6 +8,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import CadastroVideo from './pages/Cadastro/Video';
 import CadastroCategoria from './pages/Cadastro/Categoria';
+import x404 from './pages/404';
 
 ReactDOM.render(
     <BrowserRouter>
@@ -15,7 +16,7 @@ ReactDOM.render(
             <Route path='/' component={Home} exact />
             <Route path='/cadastro/video' component={CadastroVideo} />
             <Route path='/cadastro/categoria' component={CadastroCategoria} />
-            <Route component={Home} />
+            <Route component={x404} />
         </Switch>
     </BrowserRouter>,
     document.getElementById('root')
