@@ -73,7 +73,7 @@ width: 35vw;
 margin-bottom: 7px;
 
 font-weight: 300;
-font-size: 1.2vw;
+font-size: 1.1vw;
 
 
 /* border: 1px solid green; */

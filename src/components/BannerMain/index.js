@@ -35,9 +35,11 @@ const BannerMain = () =>
                     </WatchButton>
                 </BannerMainDescription.ButtonsNav>
                 <BannerMainDescription.Texto>
-                    © 2019 MARVEL
-                    © 2019 Sony Interactive Entertainment LLC
-                    Developed by Insomniac Games, Inc.
+                    <small>
+                        © 2019 MARVEL<br />
+                        © 2019 Sony Interactive Entertainment LLC<br />
+                        Developed by Insomniac Games, Inc.
+                    </small>
                 </BannerMainDescription.Texto>
 
             </BannerMainDescription>
