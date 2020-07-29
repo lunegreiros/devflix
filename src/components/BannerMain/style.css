@@ -1,3 +1,9 @@
 .BannerRow {
+  /* border: 1px solid orange; */
   height: 56vw;
+}
+@media (max-width: 1024px) {
+  .icon_banner_main {
+    display: none;
+  }
 }

@@ -1,30 +1,34 @@
 import styled from 'styled-components';
 
 export const Title = styled.h3`
+  color: var(--grayLight);
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 35px;
+  font-size: 1.3vw;
   line-height: 1;
-  margin-bottom: 16px;
+
+  line-height: 1;
+  margin: 8px 0px;
   display: inline-block;
-  padding: 20px;
-  background: red;
-  line-height: 1;
-  border-radius: 4px;
 
   @media (max-width: 800px) {
-    font-size: 18px;
-    padding: 10px;
+    font-size: 1.6vw;
   }
 `;
 
 export const ExtraLink = styled.a`
+  color: var(--blackLighter);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.1vw;
   margin-left: 16px;
   text-decoration: none;
-  transition: opacity .3s;
+  transition: color .3s;
   &:hover,
   &:focus {
-    opacity: .5;
+    /* opacity: .5; */
+    color: white;
   }
   @media (max-width: 800px) {
     display: block;
@@ -49,7 +53,10 @@ export const VideoCardList = styled.ul`
 
 export const VideoCardGroupContainer = styled.section`
   color: white;
-  min-height: 197px;
+  min-height: 9vw;
   margin-left: 5%;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+    @media (max-width: 1024px){
+  min-height: 11vw;
+  }
 `;

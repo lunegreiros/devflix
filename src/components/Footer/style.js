@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterBase = styled.footer`
+position: relative;
 background: linear-gradient(180deg, rgba(30,30,30,1) 0%, rgba(15,15,15,1) 100%);
 padding: 40px 10px 20px 10px;
 color: var(--white);

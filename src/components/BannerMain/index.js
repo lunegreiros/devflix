@@ -26,11 +26,11 @@ const BannerMain = () =>
                 </BannerMainDescription.Texto>
                 <BannerMainDescription.ButtonsNav>
                     <WatchButton>
-                        <Play size={16} />
+                        <div className="icon_banner_main"><Play size={16} /></div>
                         <PlayButton>Assistir</PlayButton>
                     </WatchButton>
                     <WatchButton>
-                        <Check size={16} />
+                        <div className="icon_banner_main"><Check size={16} /></div>
                         <PlayButton>Minha Lista</PlayButton>
                     </WatchButton>
                 </BannerMainDescription.ButtonsNav>
