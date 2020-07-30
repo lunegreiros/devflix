@@ -12,7 +12,7 @@ function Home() {
       <BannerMain />
       <CarouselContainer />
 
-      {/* <FooterBase /> */}
+      <FooterBase />
     </>
   );
 }
