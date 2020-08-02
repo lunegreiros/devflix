@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "feather-icons": "^4.28.0",
     "react": "^16.13.1",
+    "react-custom-scroll": "^4.2.1",
     "react-dom": "^16.13.1",
     "react-feather": "^2.0.8",
     "react-router-dom": "^5.2.0",

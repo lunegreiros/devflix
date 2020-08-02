@@ -1,5 +1,5 @@
 import React from 'react';
-import { BannerContainer, BannerMaskBlack, BannerMainDescription, WatchButton, PlayButton, ContentRating, LaunchDate } from './style';
+import { BannerContainer, BannerMaskBlack, BannerMainDescription, WatchButton, TextButton, ContentRating, LaunchDate } from './style';
 import './style.css'
 import Logo from '../../assets/spiderman-badge-desktop-tablet-01-ps4-05sep18en.png';
 import { Play, Check } from 'react-feather';
@@ -26,16 +26,12 @@ const BannerMain = () =>
                 </BannerMainDescription.Texto>
                 <BannerMainDescription.ButtonsNav>
                     <WatchButton>
-                        <div className="icon_banner_main">
-                            {/* <Play size={16} /> */}
-                            <PlayButton>Assistir</PlayButton>
-                        </div>
+                        <Play size={16} />
+                        <TextButton>Assistir</TextButton>
                     </WatchButton>
                     <WatchButton>
-                        <div className="icon_banner_main">
-                            {/* <Check size={16} /> */}
-                            <PlayButton>Minha Lista</PlayButton>
-                        </div>
+                        <Check size={16} />
+                        <TextButton>Minha Lista</TextButton>
                     </WatchButton>
                 </BannerMainDescription.ButtonsNav>
                 <BannerMainDescription.Texto >

@@ -1,10 +1,6 @@
 
 @media (max-width: 1024px) {
-  .icon_banner_main, .lastText {
-    /* display: none;
-    margin: 0; */
-  }
-  .icon_banner_main > span {
-    /* margin-left: 0; */
+  .lastText {
+    display: none;
   }
 }

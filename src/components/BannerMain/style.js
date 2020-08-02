@@ -78,10 +78,9 @@ font-size: 1.1vw;
 BannerMainDescription.ButtonsNav = styled.div`
 /* border: 1px solid green; */
 display: flex;
-margin-bottom: 7px; 
 `;
 
-export const WatchButton = styled.a`
+export const WatchButton = styled.div`
   box-sizing: border-box;
   cursor: pointer;
   padding: 4px 20px 4px 16px;
@@ -92,25 +91,31 @@ export const WatchButton = styled.a`
   display: flex;
   align-items: center;
   border: 1px solid transparent;
-  color: var(--black);
   background: var(--white);
-  /* border-color: var(--black); */
-  transition: opacity .3s;
-  /* margin: 0 auto; */
+  transition: opacity .5s;
   margin: 10px 8px;
-  @media (max-width: 800px) {
-    display: block;
-      font-size: 1.6vw;
-  }
-`;
 
-export const PlayButton = styled.span`
+  /* FONT */
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1.4vw;
   text-decoration: none;
-  margin-left: 8px;
+
+  @media (max-width: 800px) {
+      font-size: 1.6vw;
+      & :first-child {
+      display: none;
+      padding: 4px 20px;
+    }
+  }
+  & :first-child{
+    margin: auto 5px auto 0;
+  }
+`;
+
+export const TextButton = styled.div`
+margin: auto;
 `;
 
 export const ContentRating = styled.span`
