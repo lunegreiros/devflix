@@ -3,61 +3,56 @@ import backImage from '../../assets/Spider-Man_PS4_Selfie_Photo_Mode_LEGAL.jpg'
 
 export const BannerContainer = styled.section`
 -webkit-mask-image: -webkit-gradient(linear, left 70%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-position: absolute;
-    /* background-color: orange; */
+    /* border: 1px solid orange; */
+    position: absolute;
+    z-index: 0;
     background-image: url(${backImage});
     background-size: cover;
     width: 100%;
-    height: 56vw;
+    height: 60vw;
     margin: 0;
-    z-index: 0;
 `;
 
 export const BannerMaskBlack = styled.div`
-/* -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); */
-/* mask-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)); */
 background: linear-gradient(90deg, rgba(0,0,0,.9) 0%, rgba(0,0,0,.85) 35%, rgba(0,0,0,0) 100%);
-position: relative;
-top: 0;
-left: 0;
-width: 70%;
-height: 56vw;
+/* border: 1px solid blue; */
+position: static;
 z-index: 1;
+width: 70%;
+height: 60vw;
 `;
 
 export const BannerMainDescription = styled.article`
-position: absolute;
+/* border: 1px solid red; */
+position: static;
+z-index: 2;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-top: 0;
-left: 0;
 width: 44vw;
 height: 50vw;
-/* border: 1px solid red; */
 `;
 
 BannerMainDescription.Logo = styled.div`
+/* border: 1px solid green; */
 display: flex;
 justify-content: center;
 align-items: flex-end;
 width: 35vw;
 height: 150px;
 margin: 35px 0px 15px 0px;
-/* border: 1px solid green; */
 & img{
     max-width: 100%;
     max-height: 100%;
 }
 `;
 BannerMainDescription.Info = styled.div`
+/* border: 1px solid green; */
 color: var(--grayLight);
 width: 35vw;
 margin-bottom: 7px;
 font-size: 1.2vw;
-
-/* border: 1px solid green; */
 @media screen and (max-width: 1024px) {
     font-size: 1.5vw;
 }
@@ -68,6 +63,7 @@ font-size: 1.2vw;
 }
 `;
 BannerMainDescription.Texto = styled.div`
+/* border: 1px solid green; */
 color: var(--blackLighter);
 width: 35vw;
 margin-bottom: 7px;
@@ -75,13 +71,12 @@ margin-bottom: 7px;
 font-weight: 300;
 font-size: 1.1vw;
 
-
-/* border: 1px solid green; */
     @media (max-width: 1024px) {
        font-size: 1.5vw;
      }
 `;
 BannerMainDescription.ButtonsNav = styled.div`
+/* border: 1px solid green; */
 display: flex;
 margin-bottom: 7px; 
 `;

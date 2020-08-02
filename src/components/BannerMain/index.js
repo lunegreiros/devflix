@@ -9,7 +9,7 @@ const BannerMain = () =>
     (
         <>
             <BannerContainer>
-                <BannerMaskBlack></BannerMaskBlack>
+                <BannerMaskBlack />
             </BannerContainer>
             <BannerMainDescription>
                 <BannerMainDescription.Logo>
@@ -26,16 +26,20 @@ const BannerMain = () =>
                 </BannerMainDescription.Texto>
                 <BannerMainDescription.ButtonsNav>
                     <WatchButton>
-                        <div className="icon_banner_main"><Play size={16} /></div>
-                        <PlayButton>Assistir</PlayButton>
+                        <div className="icon_banner_main">
+                            {/* <Play size={16} /> */}
+                            <PlayButton>Assistir</PlayButton>
+                        </div>
                     </WatchButton>
                     <WatchButton>
-                        <div className="icon_banner_main"><Check size={16} /></div>
-                        <PlayButton>Minha Lista</PlayButton>
+                        <div className="icon_banner_main">
+                            {/* <Check size={16} /> */}
+                            <PlayButton>Minha Lista</PlayButton>
+                        </div>
                     </WatchButton>
                 </BannerMainDescription.ButtonsNav>
-                <BannerMainDescription.Texto>
-                    <small>
+                <BannerMainDescription.Texto >
+                    <small className="lastText">
                         © 2019 MARVEL<br />
                         © 2019 Sony Interactive Entertainment LLC<br />
                         Developed by Insomniac Games, Inc.
@@ -44,7 +48,6 @@ const BannerMain = () =>
 
             </BannerMainDescription>
 
-            <div className="BannerRow"></div>
         </>
     );
 
