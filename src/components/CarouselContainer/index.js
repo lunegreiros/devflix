@@ -7,7 +7,9 @@ function CarouselContainer() {
 
     return (
         <Container>
-            <Carousel ignoreFirstVideo category={dadosIniciais.categorias[0]} />
+            {/* <Carousel ignoreFirstVideo category={dadosIniciais.categorias[0]} /> */}
+
+            <Carousel category={dadosIniciais.categorias[0]} />
 
             <Carousel category={dadosIniciais.categorias[1]} />
 
@@ -15,9 +17,9 @@ function CarouselContainer() {
 
             {/* <Carousel category={dadosIniciais.categorias[3]} /> */}
 
-            {/* <Carousel category={dadosIniciais.categorias[4]} />
+            {/* <Carousel category={dadosIniciais.categorias[4]} /> */}
 
-            <Carousel category={dadosIniciais.categorias[5]} /> */}
+            {/* <Carousel category={dadosIniciais.categorias[5]} /> */}
         </Container>
     );
 }
