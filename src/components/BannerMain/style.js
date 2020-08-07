@@ -46,6 +46,9 @@ margin: 35px 0px 15px 0px;
     max-width: 100%;
     max-height: 100%;
 }
+@media (max-width: 467px){
+  margin-bottom: 5px;
+}
 `;
 BannerMainDescription.Info = styled.div`
 /* border: 1px solid green; */
@@ -78,6 +81,10 @@ font-size: 1.1vw;
 BannerMainDescription.ButtonsNav = styled.div`
 /* border: 1px solid green; */
 display: flex;
+@media (max-width: 467px){
+  display: block;
+  margin: 0px;
+}
 `;
 
 export const WatchButton = styled.div`
@@ -106,12 +113,13 @@ export const WatchButton = styled.div`
       font-size: 1.6vw;
       & :first-child {
       display: none;
-      padding: 4px 20px;
     }
+      padding: 4px 16px;
   }
-  & :first-child{
-    margin: auto 5px auto 0;
+  @media (max-width: 467px) {
+      margin: 5px;
   }
+
 `;
 
 export const TextButton = styled.div`

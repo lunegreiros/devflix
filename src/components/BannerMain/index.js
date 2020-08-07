@@ -16,7 +16,7 @@ const BannerMain = () =>
                     <img src={Logo} alt="Logo Spiderman Movie" />
 
                 </BannerMainDescription.Logo>
-                <BannerMainDescription.Info>
+                <BannerMainDescription.Info className="firstText">
                     <LaunchDate>Lançamento</LaunchDate> 28 Ago. 2019
                     <ContentRating>12</ContentRating>
                      53.61 GB
@@ -26,11 +26,11 @@ const BannerMain = () =>
                 </BannerMainDescription.Texto>
                 <BannerMainDescription.ButtonsNav>
                     <WatchButton>
-                        <Play size={16} />
+                        <Play className="BtnPlay" />
                         <TextButton>Assistir</TextButton>
                     </WatchButton>
                     <WatchButton>
-                        <Check size={16} />
+                        <Check className="BtnCheck" />
                         <TextButton>Minha Lista</TextButton>
                     </WatchButton>
                 </BannerMainDescription.ButtonsNav>

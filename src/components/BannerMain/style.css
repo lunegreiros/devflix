@@ -4,3 +4,23 @@
     display: none;
   }
 }
+
+.BtnPlay, .BtnCheck{
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+/* MEDIA */
+@media (max-width: 1024px){
+  .BtnPlay, .BtnCheck{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+}
+@media (max-width: 467px){
+  .firstText{
+    display: none;
+  }
+}
