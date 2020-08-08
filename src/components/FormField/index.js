@@ -41,8 +41,6 @@ const Input = styled.input`
   width: 100%;
   height: 57px;
   font-size: 18px;
-  
-  outline: 0;
   border: 0;
   border-top: 4px solid transparent;
   border-bottom: 4px solid #53585D;
