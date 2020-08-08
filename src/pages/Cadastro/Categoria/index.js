@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageTemplate from '../../../components/PageTemplate';
 import FormField from '../../../components/FormField';
+import LoadingIcon from '../../../components/Loading';
 
 function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
@@ -94,6 +95,11 @@ function CadastroCategoria() {
         </button>
       </form>
 
+      {categorias.length === 0 && (
+        <div>
+          <LoadingIcon />
+        </div>
+      )}
       {/* exibe a lista de '{categorias}' */}
       <ul>
         {categorias.map((categoria) => (
