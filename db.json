@@ -7,7 +7,12 @@
     },
     {
       "id":2,
-      "name": "Front End 2",
+      "name": "Back End",
+      "description":"Uma categoria de fronte end 2"
+    },
+    {
+      "id":3,
+      "name": "DevOps",
       "description":"Uma categoria de fronte end 2"
     }
   ]

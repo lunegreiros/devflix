@@ -24,7 +24,9 @@ function CadastroCategoria() {
 
   // use Effect dois parâmetros: o que fazer e quando fazer
   useEffect(() => {
-    const URL = 'http://localhost:8080/categorias';
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://gameflix-two.herokuapp.com/categorias';
 
     fetch(URL)
       .then(async (respServer) => {
