@@ -3,27 +3,17 @@ import { Link } from 'react-router-dom';
 import PageTemplate from '../../../components/PageTemplate';
 import FormField from '../../../components/FormField';
 import LoadingIcon from '../../../components/Loading';
+import useForm from '../../../hooks/useForm';
 
 import './style.css';
 
 function CadastroCategoria() {
-  const [categorias, setCategorias] = useState([]);
   const valoresIniciais = {
     name: '',
     description: '',
   };
-  const [valuesForm, setValuesForm] = useState(valoresIniciais);
-
-  function setValue(key, value) {
-    setValuesForm({
-      ...valuesForm,
-      [key]: value,
-    });
-  }
-
-  function handleChange(e) {
-    setValue(e.target.getAttribute('name'), e.target.value);
-  }
+  const { handleChange, valuesForm, clearForm } = useForm(valoresIniciais);
+  const [categorias, setCategorias] = useState([]);
 
   // use Effect dois parâmetros: o que fazer e quando fazer
   useEffect(() => {
@@ -39,22 +29,6 @@ function CadastroCategoria() {
           ...respConverted,
         ]);
       });
-
-    // setTimeout(() => {
-    //   setCategorias([
-    //     ...categorias,
-    //     {
-    //       id: 1,
-    //       name: 'Front End',
-    //       description: 'Uma categoria de fronte end',
-    //     },
-    //     {
-    //       id: 2,
-    //       name: 'Front End 2',
-    //       description: 'Uma categoria de fronte end 2',
-    //     },
-    //   ]);
-    // }, 4 * 1000);
   }, []);
 
   return (
@@ -73,14 +47,14 @@ function CadastroCategoria() {
           valuesForm,
         ]);
 
-        setValuesForm(valoresIniciais);
+        clearForm();
       }}
       >
 
         <FormField
           label="Nome da Categoria"
-          type="text"
-          name="nome"
+          // type="text"
+          name="name"
           value={valuesForm.name}
           onChange={handleChange}
         />
@@ -106,7 +80,7 @@ function CadastroCategoria() {
       <table className="tableRegister">
         <tbody>
           {categorias.map((categoria) => (
-            <tr>
+            <tr key={`${categoria.titulo}_${categoria.id}`}>
               <td>
                 {categoria.titulo}
               </td>
