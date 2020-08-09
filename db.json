@@ -1,19 +1,157 @@
 {
   "categorias": [
     {
+    "id": 1,
+    "titulo": "Playstation 5",
+    "cor": "#6BD1FF",
+    "link_extra": {
+      "text": "Novidades e trailers PS5",
+      "url": "https://www.playstation.com/pt-br/ps5/"
+      }
+    },{
+    "id": 2,
+    "titulo": "Wish List",
+    "cor": "#00C86F",
+    "link_extra": {
+      "text": "",
+      "url": ""
+      }
+    },{
+    "id": 3,
+    "titulo": "Gameplay",
+    "cor": "#9cd33b",
+    "link_extra": {
+      "text": "",
+      "url": ""
+      }
+    }
+  ],
+  "videos": [
+    {
       "id":1,
-      "name": "Front End",
-      "description":"Uma categoria de fronte end"
+      "categoriaId": 1,
+      "titulo": "Planet Coaster: Console Edition - Dev Diary #1 | PS4, PS5",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=2ZOA8y1dIOM"
     },
     {
       "id":2,
-      "name": "Back End",
-      "description":"Uma categoria de fronte end 2"
+      "categoriaId": 1,
+      "titulo": "PS5 Hardware Reveal Trailer",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=RkC0l4iekYo"
     },
     {
       "id":3,
-      "name": "DevOps",
-      "description":"Uma categoria de fronte end 2"
+      "categoriaId": 1,
+      "titulo": "Horizon Forbidden West - Announcement Trailer | PS5",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=Lq594XmpPBg"
+    },
+    {
+      "id":4,
+      "categoriaId": 1,
+      "titulo": "Marvel's Spider-Man: Miles Morales - Announcement Trailer | PS5",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=gHzuHo80U2M"
+    },
+    {
+      "id":5,
+      "categoriaId": 1,
+      "titulo": "Gran Turismo 7 - Announcement Trailer | PS5",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=oz-O74SmTSQ"
+    },
+    {
+      "id":6,
+      "categoriaId": 1,
+      "titulo": "Outriders - Gameplay Reveal Trailer | PS5, PS4",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=SrRDiiaCf8c"
+    },
+    {
+      "id":7,
+      "categoriaId": 1,
+      "titulo": "Ratchet & Clank: Rift Apart - Insomniac Insights | PS5",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=zKgvVS53e9s"
+    },
+    {
+      "id":8,
+      "categoriaId": 1,
+      "titulo": "Hitman 3 - Dubai Cinematic Gameplay Trailer | PS5",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=B36fXA4jRjA"
+    },
+    {
+      "id":9,
+      "categoriaId": 1,
+      "titulo": "Project Athia – Teaser Trailer | PS5",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=doe3kUqHIcM"
+    },
+    {
+      "id":10,
+      "categoriaId": 1,
+      "titulo": "Pragmata - Announcement Trailer | PS5",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=xoxCboik0Is"
+    },
+    {
+      "id":11,
+      "categoriaId": 1,
+      "titulo": "Returnal - Announcement Trailer | PS5",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=Jv4BjWoB-NA"
+    },
+    {
+      "id":12,
+      "categoriaId": 2,
+      "titulo": "THE LAST OF US 2 Official Trailer (PS4)",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=qPNiIeKMHyg"
+    },
+    {
+      "id":13,
+      "categoriaId": 2,
+      "titulo": "RAGE 2 – Official Launch Trailer",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=PLQg-Vq2zQk"
+    },
+    {
+      "id":14,
+      "categoriaId": 2,
+      "titulo": "Resident Evil 7 Biohazard - Announcement Trailer - E3 2016",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=9YetHMnhnhM"
+    },
+    {
+      "id":15,
+      "categoriaId": 2,
+      "titulo": "Call of Duty®: Modern Warfare® | Multiplayer Reveal Trailer",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=J7Ivdq5E-fs"
+    },
+    {
+      "id":16,
+      "categoriaId": 2,
+      "titulo": "Cyberpunk 2077 - Official World Premiere Trailer | E3 2018",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=UjxS9ciNlII"
+    },
+    {
+      "id":17,
+      "categoriaId": 3,
+      "titulo": "Ghost of Tsushima's World and Story | PlayStation Live From E3 2018",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=UuzeILP6a7g"
+    },
+    {
+      "id":18,
+      "categoriaId": 3,
+      "titulo": "CYBERPUNK 2077 NEW Gameplay Demo 73 Minutes HD PC/PS4/Xbox One",
+      "description": "",
+      "url": "https://www.youtube.com/watch?v=V5yIlA6g_9o"
     }
   ]
 }
