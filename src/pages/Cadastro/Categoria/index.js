@@ -4,6 +4,8 @@ import PageTemplate from '../../../components/PageTemplate';
 import FormField from '../../../components/FormField';
 import LoadingIcon from '../../../components/Loading';
 
+import './style.css';
+
 function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
   const valoresIniciais = {
@@ -101,13 +103,21 @@ function CadastroCategoria() {
         </div>
       )}
       {/* exibe a lista de '{categorias}' */}
-      <ul>
-        {categorias.map((categoria) => (
-          <li key={`${categoria.name}`}>
-            {categoria.name}
-          </li>
-        ))}
-      </ul>
+      <table className="tableRegister">
+        <tbody>
+          {categorias.map((categoria) => (
+            <tr>
+              <td>
+                {categoria.titulo}
+              </td>
+              <td className="btn_tableRegister">
+                <button type="button">Deletar</button>
+              </td>
+            </tr>
+          ))}
+
+        </tbody>
+      </table>
 
       <Link to="/cadastro/video">
         Cadastrar Vídeo
