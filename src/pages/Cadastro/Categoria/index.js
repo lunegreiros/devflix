@@ -6,6 +6,7 @@ import LoadingIcon from '../../../components/Loading';
 import useForm from '../../../hooks/useForm';
 
 import './style.css';
+import { ButtonSubmit } from '../../../components/Button';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -66,9 +67,9 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        <button type="submit">
+        <ButtonSubmit>
           Cadastrar
-        </button>
+        </ButtonSubmit>
       </form>
 
       {categorias.length === 0 && (
@@ -95,10 +96,6 @@ function CadastroCategoria() {
 
       <Link to="/cadastro/video">
         Cadastrar Vídeo
-      </Link>
-      <br />
-      <Link to="/">
-        Ir para a Home
       </Link>
     </PageTemplate>
   );

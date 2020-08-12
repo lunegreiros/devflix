@@ -22,4 +22,15 @@ color: var(--blackLighter);
 }
 `;
 
+export const ButtonSubmit = styled.button`
+padding: 8px 28px;
+background-color: red;
+color: white;
+font-weight: bold;
+outline: none;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+`;
+
 export default Button;
